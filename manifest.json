@@ -1,0 +1,21 @@
+
+{
+    "acVersion": "1.0.0",
+    "acKind": "AppManifest",
+    "name": "shashwat.tech/alpine-nginx",
+    "os": "linux",
+    "arch": "amd64",
+    "exec": [
+        "/bin/nginx start"
+    ],
+    "ports": [
+        {
+            "name": "www",
+            "protocol": "tcp",
+            "port": 80
+        }
+    ],
+    "annotations": {
+        "authors": "Kelsey Hightower <kelsey.hightower@gmail.com>"
+    }
+}
