@@ -1,0 +1,8 @@
+[Unit]
+Description=nginx
+
+[Service]
+Slice=machine.slice
+ExecStart=/usr/bin/rkt run --insecure-options=image --port=80-tcp:9010 docker://nginx
+KillMode=mixed
+Restart=always
